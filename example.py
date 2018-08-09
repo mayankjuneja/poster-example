@@ -14,4 +14,5 @@ datagen, headers = multipart_encode({INPUT_VAR_NAME : open(INPUT_FILE_PATH,"rb")
 
 request = urllib2.Request(URL, datagen, headers)
 
+# Make a request
 res = urllib2.urlopen(request).read()
